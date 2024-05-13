@@ -1,0 +1,28 @@
+// SASS Variables (fallback)
+// https://defensivecss.dev/tip/css-variable-fallback/
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Arial, sans-serif';
+$font-size: 16px;
+$background-color: #f4f4f4;
+$button-padding: 8px 12px;
+$border-radius: 5px;
+$border-color: #ddd;
+
+// CSS Variables
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --font-stack: #{$font-stack};
+  --font-size: #{$font-size};
+  --background-color: #{$background-color};
+  --button-padding: #{$button-padding};
+  --border-radius: #{$border-radius};
+  --border-color: #{$border-color};
+
+  // Pagination overrides
+  --pagination-color: #{$primary-color};
+  --pagination-hover-color: white;
+  --pagination-background-color: white;
+  --pagination-border-color: #{$border-color};
+}
